@@ -1,0 +1,13 @@
+{
+  "booking_hold_minutes": 10,
+  "extension_hold_minutes": 10,
+  "extension_rule": "Chỉ được gia hạn sang khung kế tiếp của cùng phòng khi khung đó còn khả dụng; không cần lễ tân phê duyệt.",
+  "cancellation_rule": "Hủy và hoàn tiền được xử lý theo chính sách hiệu lực tại thời điểm lượt đặt được xác nhận.",
+  "checkin_login_required": true,
+  "checkin_login_rule": "Khách phải đăng nhập bằng tài khoản đã xác thực trước khi xác nhận đặt phòng và thanh toán; được tìm kiếm/xem phòng khi chưa đăng nhập.",
+  "ai_transaction_permission": false,
+  "ai_scope_rule": "AI chỉ tư vấn dựa trên dữ liệu hệ thống và thông tin khách cung cấp trong phiên; không tự thực hiện đặt phòng, thanh toán, hủy hoặc gia hạn; không tự tạo thông tin khi dữ liệu không đủ.",
+  "ai_response_time_target_seconds": 5,
+  "response_time_source": "NFR-06",
+  "scope_source": "BR-13"
+}

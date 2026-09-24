@@ -1,0 +1,114 @@
+{
+  "BT-STD-01": [
+    "/static/images/rooms/BT/BT-STD-01-1.png",
+    "/static/images/rooms/BT/BT-STD-01-2.png",
+    "/static/images/rooms/BT/BT-STD-01-3.png",
+    "/static/images/rooms/BT/BT-STD-01-4.png"
+  ],
+  "BT-STD-02": [
+    "/static/images/rooms/BT/BT-STD-02-1.png",
+    "/static/images/rooms/BT/BT-STD-02-2.png",
+    "/static/images/rooms/BT/BT-STD-02-3.png",
+    "/static/images/rooms/BT/BT-STD-02-4.png"
+  ],
+  "BT-STD-03": [
+    "/static/images/rooms/BT/BT-STD-03-1.png",
+    "/static/images/rooms/BT/BT-STD-03-2.png",
+    "/static/images/rooms/BT/BT-STD-03-3.png",
+    "/static/images/rooms/BT/BT-STD-03-4.png"
+  ],
+  "BT-STD-04": [
+    "/static/images/rooms/BT/BT-STD-04-1.png",
+    "/static/images/rooms/BT/BT-STD-04-2.png",
+    "/static/images/rooms/BT/BT-STD-04-3.png",
+    "/static/images/rooms/BT/BT-STD-04-4.png"
+  ],
+  "BT-DL-01": [
+    "/static/images/rooms/BT/BT-DL-01-1.png",
+    "/static/images/rooms/BT/BT-DL-01-2.png",
+    "/static/images/rooms/BT/BT-DL-01-3.png",
+    "/static/images/rooms/BT/BT-DL-01-4.png"
+  ],
+  "BT-DL-02": [
+    "/static/images/rooms/BT/BT-DL-02-1.png",
+    "/static/images/rooms/BT/BT-DL-02-2.png",
+    "/static/images/rooms/BT/BT-DL-02-3.png",
+    "/static/images/rooms/BT/BT-DL-02-4.png"
+  ],
+  "BT-DL-03": [
+    "/static/images/rooms/BT/BT-DL-03-1.png",
+    "/static/images/rooms/BT/BT-DL-03-2.png",
+    "/static/images/rooms/BT/BT-DL-03-3.png",
+    "/static/images/rooms/BT/BT-DL-03-4.png"
+  ],
+  "BT-FAM-01": [
+    "/static/images/rooms/BT/BT-FAM-01-1.png",
+    "/static/images/rooms/BT/BT-FAM-01-2.png",
+    "/static/images/rooms/BT/BT-FAM-01-3.png",
+    "/static/images/rooms/BT/BT-FAM-01-4.png"
+  ],
+  "TD-STD-01": [
+    "/static/images/rooms/TD/TD-STD-01-1.png",
+    "/static/images/rooms/TD/TD-STD-01-2.png"
+  ],
+  "TD-STD-02": [
+    "/static/images/rooms/TD/TD-STD-02-1.png",
+    "/static/images/rooms/TD/TD-STD-02-2.png"
+  ],
+  "TD-STD-03": [
+    "/static/images/rooms/TD/TD-STD-03-1.png",
+    "/static/images/rooms/TD/TD-STD-03-2.png"
+  ],
+  "TD-DL-01": [
+    "/static/images/rooms/TD/TD-DL-01-1.png",
+    "/static/images/rooms/TD/TD-DL-01-2.png"
+  ],
+  "TD-DL-02": [
+    "/static/images/rooms/TD/TD-DL-02-1.png",
+    "/static/images/rooms/TD/TD-DL-02-2.png"
+  ],
+  "TD-DL-03": [
+    "/static/images/rooms/TD/TD-DL-03-1.png",
+    "/static/images/rooms/TD/TD-DL-03-2.png"
+  ],
+  "TD-FAM-01": [
+    "/static/images/rooms/TD/TD-FAM-01-1.png",
+    "/static/images/rooms/TD/TD-FAM-01-2.png"
+  ],
+  "TD-FAM-02": [
+    "/static/images/rooms/TD/TD-FAM-02-1.png",
+    "/static/images/rooms/TD/TD-FAM-02-2.png"
+  ],
+  "PMH-STD-01": [
+    "/static/images/rooms/PMH/PMH-STD-01-1.png",
+    "/static/images/rooms/PMH/PMH-STD-01-2.png"
+  ],
+  "PMH-STD-02": [
+    "/static/images/rooms/PMH/PMH-STD-02-1.png",
+    "/static/images/rooms/PMH/PMH-STD-02-2.png"
+  ],
+  "PMH-STD-03": [
+    "/static/images/rooms/PMH/PMH-STD-03-1.png",
+    "/static/images/rooms/PMH/PMH-STD-03-2.png"
+  ],
+  "PMH-DL-01": [
+    "/static/images/rooms/PMH/PMH-DL-01-1.png",
+    "/static/images/rooms/PMH/PMH-DL-01-2.png"
+  ],
+  "PMH-DL-02": [
+    "/static/images/rooms/PMH/PMH-DL-02-1.png",
+    "/static/images/rooms/PMH/PMH-DL-02-2.png"
+  ],
+  "PMH-DL-03": [
+    "/static/images/rooms/PMH/PMH-DL-03-1.png",
+    "/static/images/rooms/PMH/PMH-DL-03-2.png"
+  ],
+  "PMH-DL-04": [
+    "/static/images/rooms/PMH/PMH-DL-04-1.png",
+    "/static/images/rooms/PMH/PMH-DL-04-2.png"
+  ],
+  "PMH-FAM-01": [
+    "/static/images/rooms/PMH/PMH-FAM-01-1.png",
+    "/static/images/rooms/PMH/PMH-FAM-01-2.png"
+  ]
+}

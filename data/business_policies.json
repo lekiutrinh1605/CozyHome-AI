@@ -1,0 +1,152 @@
+[
+  {
+    "policy_id": "POL-CANCEL",
+    "category": "CANCELLATION",
+    "title": "Chính sách hủy đặt phòng và hoàn tiền",
+    "summary": "Quy định tỷ lệ hoàn tiền theo mốc 24h và 12h trước thời điểm bắt đầu lưu trú.",
+    "effective_from": "2026-08-01",
+    "active": true,
+    "version": "1.0",
+    "updated_at": "2026-09-23T00:29:47.271604",
+    "updated_by": "Quản lý chuỗi",
+    "rules": [
+      {
+        "condition": "Từ 24 giờ trở lên trước thời điểm lưu trú",
+        "refund_rate": "100%",
+        "description": "Hoàn lại toàn bộ 100% giá trị tiền phòng đủ điều kiện hoàn."
+      },
+      {
+        "condition": "Từ 12 giờ đến dưới 24 giờ trước thời điểm lưu trú",
+        "refund_rate": "50%",
+        "description": "Hoàn lại 50% tiền phòng."
+      },
+      {
+        "condition": "Dưới 12 giờ trước thời điểm lưu trú",
+        "refund_rate": "0%",
+        "description": "Không hoàn tiền."
+      },
+      {
+        "condition": "Không đến nhận phòng (No-show) hoặc hủy sau giờ bắt đầu",
+        "refund_rate": "0%",
+        "description": "Không hoàn tiền."
+      }
+    ],
+    "content": "Khách có thể gửi yêu cầu hủy trước thời điểm bắt đầu lưu trú. Hệ thống hiển thị số tiền dự kiến được hoàn trước khi khách xác nhận hủy. Thời điểm hủy được tính theo thời điểm yêu cầu hủy hợp lệ được hệ thống ghi nhận so với thời điểm bắt đầu của lượt đặt. Mức hoàn trên áp dụng thống nhất cho đặt phòng theo giờ và qua đêm, không phân biệt ngày thường, cuối tuần hay ngày lễ. Khoản hoàn được gửi về đúng phương thức thanh toán ban đầu trong vòng 3 đến 15 ngày làm việc sau khi kế toán đối soát."
+  },
+  {
+    "policy_id": "POL-EXTEND",
+    "category": "EXTENSION",
+    "title": "Chính sách gia hạn lưu trú và sử dụng quá giờ",
+    "summary": "Quy định điều kiện gia hạn khẩn cấp, mức phí 50.000 ₫/giờ và miễn phí trễ 15 phút.",
+    "effective_from": "2026-08-01",
+    "active": true,
+    "version": "1.0",
+    "updated_at": "2026-09-22T23:30:00",
+    "updated_by": "Quản lý chuỗi",
+    "rules": [
+      {
+        "condition": "Mức phí gia hạn lưu trú",
+        "refund_rate": "50.000 ₫/giờ",
+        "description": "Phần thời gian gia hạn chưa đủ 1 giờ được làm tròn thành 1 giờ."
+      },
+      {
+        "condition": "Trả phòng muộn không quá 15 phút",
+        "refund_rate": "Miễn phí",
+        "description": "Khách được hỗ trợ miễn phí tối đa 15 phút sau giờ kết thúc lưu trú."
+      },
+      {
+        "condition": "Trả phòng muộn từ phút thứ 16 trở đi",
+        "refund_rate": "50.000 ₫/giờ",
+        "description": "Tính phí theo đơn giá 50.000 ₫/giờ và làm tròn theo từng giờ."
+      }
+    ],
+    "content": "Khách có thể yêu cầu gia hạn trước khi hết thời gian lưu trú. Gia hạn chỉ được chấp nhận khi cùng phòng còn khả dụng, không ảnh hưởng đến thời gian chuẩn bị phòng của lượt tiếp theo. Yêu cầu gia hạn có hiệu lực sau khi xác nhận thanh toán."
+  },
+  {
+    "policy_id": "POL-CHECKIN",
+    "category": "CHECKIN_CHECKOUT",
+    "title": "Chính sách nhận phòng, trả phòng và định danh lưu trú",
+    "summary": "Yêu cầu giấy tờ định danh khi check-in, số lượng khách thực tế và kiểm tra tài sản khi checkout.",
+    "effective_from": "2026-08-01",
+    "active": true,
+    "version": "1.0",
+    "updated_at": "2026-09-22T23:30:00",
+    "updated_by": "Quản lý chuỗi",
+    "rules": [
+      {
+        "condition": "Thủ tục nhận phòng",
+        "refund_rate": "Bắt buộc",
+        "description": "Cung cấp CCCD/Hộ chiếu hợp lệ để đối chiếu người lưu trú theo quy định."
+      },
+      {
+        "condition": "Số lượng khách lưu trú",
+        "refund_rate": "Theo phòng",
+        "description": "Khách thực tế không được vượt sức chứa tối đa của phòng đã đặt."
+      },
+      {
+        "condition": "Khách thăm phòng",
+        "refund_rate": "Báo lễ tân",
+        "description": "Phải đăng ký với lễ tân và không lưu trú qua đêm nếu chưa làm thủ tục."
+      }
+    ],
+    "content": "Khi nhận phòng, khách cung cấp giấy tờ định danh còn hiệu lực. Người dưới 18 tuổi phải có người giám hộ hợp pháp đi cùng. Khi trả phòng, khách bàn giao thẻ từ/chìa khóa, kiểm tra tư trang cá nhân và thanh toán các khoản phát sinh nếu có."
+  },
+  {
+    "policy_id": "POL-RULES",
+    "category": "HOUSE_RULES",
+    "title": "Nội quy sử dụng phòng và an toàn lưu trú",
+    "summary": "Quy tắc an toàn phòng cháy chữa cháy, cấm hút thuốc, cấm chất cháy nổ và giữ yên tĩnh ban đêm.",
+    "effective_from": "2026-08-01",
+    "active": true,
+    "version": "1.0",
+    "updated_at": "2026-09-22T23:30:00",
+    "updated_by": "Quản lý chuỗi",
+    "rules": [
+      {
+        "condition": "Hút thuốc lá / Vape trong phòng",
+        "refund_rate": "Tuyệt đối cấm",
+        "description": "Nghiêm cấm hút thuốc trong phòng, phạt khử mùi 500.000 ₫/lần."
+      },
+      {
+        "condition": "Chất cấm, vũ khí, cháy nổ",
+        "refund_rate": "Tuyệt đối cấm",
+        "description": "Bàn giao ngay cơ quan chức năng xử lý theo pháp luật."
+      },
+      {
+        "condition": "Khung giờ giữ trật tự chung",
+        "refund_rate": "22:00 – 07:00",
+        "description": "Không mở nhạc lớn, không tổ chức tiệc làm phiền các phòng xung quanh."
+      }
+    ],
+    "content": "Không mang theo thú cưng trừ khi có xác nhận riêng trước từ CozyHome. Không tự ý sử dụng thiết bị sinh nhiệt hoặc nấu nướng ngoài khu vực chỉ định. CozyHome có quyền từ chối phục vụ hoặc chấm dứt lưu trú nếu vi phạm nghiêm trọng nội quy an toàn."
+  },
+  {
+    "policy_id": "POL-COMPENSATE",
+    "category": "COMPENSATION",
+    "title": "Biểu phí bồi thường tài sản và vi phạm",
+    "summary": "Bảng đơn giá bồi thường mất chìa khóa, khử mùi thuốc lá và xử lý vệt bẩn trên đồ vải.",
+    "effective_from": "2026-08-01",
+    "active": true,
+    "version": "1.0",
+    "updated_at": "2026-09-22T23:30:00",
+    "updated_by": "Quản lý chuỗi",
+    "rules": [
+      {
+        "condition": "Mất thẻ từ hoặc chìa khóa phòng",
+        "refund_rate": "200.000 ₫/lần",
+        "description": "Chi phí làm lại phôi thẻ và cài đặt mã khóa điện tử."
+      },
+      {
+        "condition": "Hút thuốc trong phòng lưu trú",
+        "refund_rate": "500.000 ₫/lần",
+        "description": "Chi phí xử lý mùi chuyên dụng và giặt tẩy toàn bộ rèm cửa, đồ vải."
+      },
+      {
+        "condition": "Vết bẩn khó xử lý trên chăn/ga/gối/nệm",
+        "refund_rate": "300.000 ₫/lần",
+        "description": "Chi phí hấp tẩy chuyên dụng tại đơn vị giặt là công nghiệp."
+      }
+    ],
+    "content": "Khách cần kiểm tra phòng lúc nhận và thông báo ngay cho lễ tân nếu có bất thường. Trường hợp phát sinh thiệt hại do lỗi từ phía khách, CozyHome lập biên bản ghi nhận hiện trạng và áp dụng mức bồi thường minh bạch, không thu trùng lặp."
+  }
+]

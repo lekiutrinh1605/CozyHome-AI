@@ -1,0 +1,23 @@
+{
+  "weekend_surcharge": {
+    "enabled": true,
+    "percent": 10,
+    "applicable_days": [
+      "Fri",
+      "Sat",
+      "Sun"
+    ],
+    "description": "Phụ thu 10% giá phòng vào các ngày cuối tuần (Thứ Sáu, Thứ Bảy, Chủ Nhật)"
+  },
+  "holiday_surcharge": {
+    "enabled": true,
+    "percent": 20,
+    "description": "Phụ thu 20% giá phòng vào các ngày lễ Tết và sự kiện cao điểm"
+  },
+  "extension_hourly_rate": 50000,
+  "late_checkout_grace_minutes": 15,
+  "late_checkout_hourly_rate": 50000,
+  "extra_guest_fee": 50000,
+  "updated_at": "2026-09-23T00:29:47.236109",
+  "updated_by": "Phan Hải Đăng"
+}

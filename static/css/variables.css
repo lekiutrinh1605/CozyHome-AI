@@ -1,0 +1,58 @@
+:root {
+  /* Brand Cozy Colors */
+  --cozy-primary: #b96b35;
+  --cozy-hover: #985123;
+  --cozy-dark: #3a2215;
+  --cozy-light: #fef8f2;
+  --cozy-sand: #f5ebe1;
+  --cozy-border: #ebd8c8;
+  --cozy-cream: #fffdfa;
+
+  /* Text Colors */
+  --text-main: #2b1d16;
+  --text-muted: #786457;
+  --text-light: #a89487;
+
+  /* Functional Status Colors */
+  --success: #2e7d32;
+  --success-bg: #e8f5e9;
+  --warning: #e65100;
+  --warning-bg: #fff3e0;
+  --danger: #c62828;
+  --danger-bg: #ffebee;
+  --info: #0277bd;
+  --info-bg: #e1f5fe;
+
+  /* Elevation Shadows — dùng có chủ đích: dropdown / modal / floating / sticky card */
+  --shadow-sm: 0 2px 8px rgba(58, 34, 21, 0.06);
+  --shadow-md: 0 8px 24px rgba(58, 34, 21, 0.12);
+  --shadow-lg: 0 20px 44px rgba(58, 34, 21, 0.16);
+
+  /* Border Radii — small=8, input/button, card=12, large image=16, pill=999 */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Motion */
+  --transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Semantic token aliases (giữ tương thích ngược với các biến --cozy-*/--text-* ở trên) */
+  --color-primary: var(--cozy-primary);
+  --color-primary-hover: var(--cozy-hover);
+  --color-background: var(--cozy-cream);
+  --color-surface: #ffffff;
+  --color-text: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--cozy-border);
+}

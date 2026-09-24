@@ -1,0 +1,5 @@
+promo_id,code,name,description,discount_percent,discount_value,condition,badge,branch_id,effective_from,effective_to,active
+PR-01,EARLYBIRD10,Ưu đãi đặt sớm,Giảm 10% khi xác nhận đặt phòng trước ngày sử dụng ít nhất 7 ngày.,10,0,advance_days>=7,Đặt sớm -10%,ALL,2026-08-01,2026-12-31,1
+PR-02,MIDWEEK15,Ưu đãi qua đêm giữa tuần,Giảm 15% cho khung lưu trú Qua đêm các ngày Chủ nhật đến thứ Năm.,15,0,khung_code=QD;midweek=true,Qua đêm -15%,ALL,2026-08-01,2026-12-31,1
+PR-03,COZYMEMBER,Ưu đãi thành viên CozyHome,Giảm ngay 30.000₫ cho khách hàng thành viên thân thiết của CozyHome.,0,30000,member=true,Thành viên -30K,ALL,2026-08-01,2026-12-31,1
+PR-04,HAPPYHOUR,Giờ vàng thư giãn,Giảm 20.000₫ cho khung giờ sáng K1 (09:30 – 12:30) đón ngày mới.,0,20000,khung_code=K1,Giờ vàng -20K,ALL,2026-08-01,2026-12-31,1

@@ -1,0 +1,1082 @@
+/* ------------------------------------------------------------- */
+/* Layout Containers & Base Spacing                              */
+/* ------------------------------------------------------------- */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 24px 20px 80px;
+  width: 100%;
+}
+
+/* Navigation Bar: định nghĩa đầy đủ nằm ở style.css (load sau cùng) */
+
+/* ------------------------------------------------------------- */
+/* Hero Section & Search Form                                    */
+/* ------------------------------------------------------------- */
+.hero {
+  background: linear-gradient(135deg, #fff7ee 0%, #f7e8db 100%);
+  border: 1px solid var(--cozy-border);
+  border-radius: var(--radius-lg);
+  padding: 48px 40px;
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 38px;
+  line-height: 1.25;
+  margin: 14px 0;
+  max-width: 680px;
+}
+
+.hero p {
+  font-size: 15px;
+  color: var(--text-muted);
+  max-width: 640px;
+  margin-bottom: 24px;
+}
+
+.search-box {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--cozy-border);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+}
+
+.search-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 2.1fr) minmax(150px, 1.1fr) minmax(90px, 0.7fr) minmax(150px, 1.1fr) minmax(185px, 1.3fr) 150px;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.search-grid .form-group {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.search-grid .form-label {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--cozy-dark);
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.search-grid .form-input,
+.search-grid .form-select {
+  width: 100%;
+  height: 50px;
+  padding: 0 14px;
+  border: 1px solid var(--cozy-border);
+  border-radius: var(--radius-sm);
+  background: white;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text-main);
+  transition: var(--transition);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-grid .form-input:focus,
+.search-grid .form-select:focus {
+  border-color: var(--cozy-primary);
+  box-shadow: 0 0 0 3px rgba(185, 107, 53, 0.15);
+}
+
+.search-grid .btn-submit-col {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.search-grid .btn-submit-col .btn {
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background: var(--cozy-primary);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.search-grid .btn-submit-col .btn:hover {
+  background: var(--cozy-hover);
+}
+
+.search-suggestions-wrap {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--cozy-border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.search-suggestions-label {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  font-weight: 700;
+  white-space: nowrap;
+  margin-right: 4px;
+}
+
+.search-suggestions-wrap .search-chip {
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 13px;
+  height: 32px;
+  background: white;
+  border: 1px solid var(--cozy-border);
+  color: var(--text-main);
+  transition: var(--transition);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.search-suggestions-wrap .search-chip:hover {
+  background: var(--cozy-light);
+  border-color: var(--cozy-primary);
+  color: var(--cozy-primary);
+}
+
+/* ------------------------------------------------------------- */
+/* Hero Banner (ảnh thật) + Search box nổi kiểu Traveloka         */
+/* ------------------------------------------------------------- */
+.hero-banner-wrap {
+  position: relative;
+  margin-bottom: 36px;
+  width: 100%;
+}
+
+.hero-banner-img {
+  width: 100%;
+  height: clamp(320px, 38vw, 490px);
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius-lg);
+  display: block;
+  overflow: hidden;
+}
+
+.search-box-float {
+  position: relative;
+  margin: -56px 0 0;
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------- */
+/* Room Grid & List                                              */
+/* ------------------------------------------------------------- */
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* ------------------------------------------------------------- */
+/* Responsive Table Wrappers                                     */
+/* ------------------------------------------------------------- */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--cozy-border);
+  border-radius: var(--radius-md);
+  background: white;
+  margin-top: 16px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13.5px;
+  min-width: 680px;
+}
+
+.adm-users-table {
+  min-width: 1140px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.adm-users-table th {
+  background: #fbf7f4 !important;
+  color: #4a3b32 !important;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 14px 12px;
+  border-bottom: 2px solid #ebdcd0;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+}
+
+.adm-users-table td {
+  padding: 12px 12px;
+  border-bottom: 1px solid #f3e8df;
+  color: var(--text-main);
+  vertical-align: middle !important;
+  font-size: 13px;
+}
+
+.adm-users-table tbody tr:hover td {
+  background: #fdfaf7;
+}
+
+.data-table th {
+  background: var(--cozy-light);
+  color: var(--cozy-dark);
+  font-weight: 700;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--cozy-border);
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f3e8df;
+  color: var(--text-main);
+  vertical-align: middle;
+}
+
+.data-table tr:hover td {
+  background: #fdfaf7;
+}
+
+/* ------------------------------------------------------------- */
+/* 7-Day Slot Matrix Calendar                                    */
+/* ------------------------------------------------------------- */
+.grid-calendar-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 16px;
+  border: 1px solid var(--cozy-border);
+  border-radius: var(--radius-md);
+  background: white;
+}
+
+.grid-calendar {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 580px;
+  text-align: center;
+}
+
+.grid-calendar th,
+.grid-calendar td {
+  padding: 10px 8px;
+  border: 1px solid var(--cozy-border);
+  font-size: 12.5px;
+}
+
+.grid-calendar th {
+  background: var(--cozy-sand);
+  font-weight: 700;
+  color: var(--cozy-dark);
+}
+
+.slot-status-pill {
+  display: block;
+  padding: 6px 4px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.slot-status-pill.available {
+  background: var(--success-bg);
+  color: var(--success);
+}
+
+.slot-status-pill.booked {
+  background: #f5f5f5;
+  color: #9e9e9e;
+}
+
+/* ------------------------------------------------------------- */
+/* Responsive Media Queries                                      */
+/* ------------------------------------------------------------- */
+
+
+/* ============================================================ */
+/* AUTHENTICATION STANDALONE MODE (Conditionally Hide Navbar & AI) */
+/* ============================================================ */
+body.auth-mode .navbar {
+  display: none !important;
+}
+
+body.auth-mode #ai-widget-toggle,
+body.auth-mode #ai-widget-box {
+  display: none !important;
+}
+
+body.auth-mode .container {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+/* Tablet & Smaller Laptops (769px - 1100px): 2 hàng cân đối */
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .hero-banner-img {
+    height: clamp(280px, 36vw, 380px);
+  }
+  .search-box-float {
+    margin: -45px 0 0;
+    padding: 20px;
+  }
+  .search-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .search-field-keyword {
+    grid-column: span 2;
+  }
+  .search-field-branch {
+    grid-column: span 2;
+  }
+  .search-field-guests {
+    grid-column: span 1;
+  }
+  .search-field-date {
+    grid-column: span 1;
+  }
+  .search-field-slot {
+    grid-column: span 1;
+  }
+  .search-field-submit {
+    grid-column: span 1;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile & Small Tablets (<= 768px): 1 cột dọc thẳng hàng */
+@media screen and (max-width: 768px) {
+  .navbar-inner {
+    height: 64px;
+    padding: 0 16px;
+  }
+  .hero {
+    padding: 28px 20px;
+  }
+  .hero h1 {
+    font-size: 26px;
+  }
+  .hero-banner-img {
+    height: clamp(190px, 48vw, 260px);
+  }
+  .search-box-float {
+    margin: -24px 0 0;
+    padding: 16px;
+    border-radius: var(--radius-sm);
+  }
+  .search-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .search-field-keyword,
+  .search-field-branch,
+  .search-field-guests,
+  .search-field-date,
+  .search-field-slot,
+  .search-field-submit {
+    grid-column: span 1 !important;
+  }
+  .search-field-submit .btn {
+    width: 100%;
+  }
+  .search-suggestions-wrap {
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+  .room-grid {
+    grid-template-columns: 1fr;
+  }
+  .auth-split-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .auth-hero-pane {
+    padding: 24px 20px !important;
+  }
+  .auth-form-pane {
+    padding: 28px 20px !important;
+  }
+  .quick-demo-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Mobile Devices (<= 480px - iPhone, 375px) */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 16px 12px 60px;
+  }
+  .brand-text {
+    font-size: 18px;
+  }
+  .brand-tagline {
+    display: none;
+  }
+  .brand-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
+  .hero {
+    padding: 20px 16px;
+    border-radius: var(--radius-md);
+  }
+  .hero h1 {
+    font-size: 22px;
+  }
+  .hero p {
+    font-size: 13.5px;
+  }
+  .hero-banner-img {
+    height: 180px;
+  }
+  .search-box-float {
+    margin: -18px 0 0;
+    padding: 14px 12px;
+  }
+  .modal-dialog {
+    margin: 10px;
+    max-height: 94vh;
+  }
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 14px 16px;
+  }
+  .modal-title {
+    font-size: 16px;
+  }
+  .quick-demo-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .toast-box {
+    right: 12px;
+    bottom: 12px;
+    width: calc(100% - 24px);
+  }
+}
+
+/* ------------------------------------------------------------- */
+/* Traveloka-Style 2-Column Layout & Horizontal Room Cards        */
+/* ------------------------------------------------------------- */
+.traveloka-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  margin-top: 24px;
+  align-items: flex-start;
+}
+
+.traveloka-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 75px;
+}
+
+.sidebar-card {
+  background: white;
+  border: 1px solid var(--cozy-border);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+}
+
+.sidebar-branches-card {
+  background: var(--cozy-dark);
+  color: white;
+  text-align: center;
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+
+.sidebar-branches-title {
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.sidebar-branches-sub {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.72);
+  margin-top: 3px;
+}
+
+.sidebar-filter-card {
+  padding: 4px 18px;
+}
+
+.sidebar-filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--cozy-border);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--cozy-dark);
+}
+
+.sidebar-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cozy-dark);
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-reset-btn {
+  background: none;
+  border: none;
+  color: var(--cozy-primary);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+.sidebar-reset-btn:hover {
+  text-decoration: underline;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-main);
+  cursor: pointer;
+  user-select: none;
+  padding: 3px 0;
+}
+
+.filter-checkbox-label .check-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-checkbox-label input[type="checkbox"] {
+  accent-color: var(--cozy-primary);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.filter-count-badge {
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--cozy-sand);
+  padding: 1px 7px;
+  border-radius: 10px;
+}
+
+/* Bộ lọc gọn: accordion gộp các nhóm + chip cho lựa chọn nhanh */
+.filter-accordion {
+  border-bottom: 1px solid var(--cozy-border);
+}
+.filter-accordion:last-of-type {
+  border-bottom: none;
+}
+.filter-accordion summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--cozy-dark);
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-accordion summary::-webkit-details-marker {
+  display: none;
+}
+.filter-accordion summary::after {
+  content: "⌄";
+  font-size: 14px;
+  color: var(--text-muted);
+  transition: transform 0.2s;
+}
+.filter-accordion[open] summary::after {
+  transform: rotate(180deg);
+}
+.filter-accordion-body {
+  padding-bottom: 14px;
+}
+
+.filter-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filter-chip-grid-slot {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.filter-chip-grid-slot .filter-chip-full {
+  grid-column: span 2;
+}
+.filter-chip-grid-slot .filter-chip {
+  width: 100%;
+}
+.filter-chip-grid-slot .filter-chip span {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.filter-chip {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+.filter-chip input[type="checkbox"],
+.filter-chip input[type="radio"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.filter-chip span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-main);
+  background: var(--cozy-light);
+  border: 1px solid var(--cozy-border);
+  border-radius: 20px;
+  padding: 6px 12px;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  user-select: none;
+}
+.filter-chip:hover span {
+  background: #f7ede3;
+  border-color: var(--cozy-primary);
+  color: var(--cozy-primary);
+}
+.filter-chip input:checked + span {
+  background: var(--cozy-primary);
+  border-color: var(--cozy-primary);
+  color: white;
+  box-shadow: 0 2px 6px rgba(184, 80, 66, 0.25);
+}
+
+/* Traveloka Results Top Bar */
+.traveloka-results-bar {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--cozy-border);
+  border-radius: 0;
+  padding: 0 0 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+  box-shadow: none;
+}
+
+.traveloka-results-bar > div:first-child {
+  min-width: 0;
+}
+
+.traveloka-results-count {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--cozy-dark);
+}
+.traveloka-results-sub {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.traveloka-sort-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-main);
+  flex: 0 0 auto;
+}
+
+.traveloka-sort-wrapper .sort-icon {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.traveloka-sort-label {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+#sort-select.form-select {
+  width: auto;
+  min-width: 178px;
+  max-width: 210px;
+  height: 40px;
+  padding: 0 30px 0 12px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 560px) {
+  .traveloka-sort-label {
+    display: none;
+  }
+  #sort-select.form-select {
+    min-width: 150px;
+  }
+}
+
+/* Horizontal Room Card — Image 32% | Info 46% | Action 22% */
+.room-card-traveloka {
+  background: white;
+  border: 1px solid var(--cozy-border);
+  border-radius: var(--radius-md);
+  display: grid;
+  grid-template-columns: 32% 46% 22%;
+  overflow: hidden;
+  transition: var(--transition);
+  margin-bottom: 16px;
+}
+
+.room-card-traveloka:hover {
+  border-color: var(--cozy-primary);
+  transform: translateY(-1px);
+}
+
+.room-card-thumb {
+  position: relative;
+  min-height: 195px;
+  background: var(--cozy-sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.room-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.room-card-concept-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(43, 23, 14, 0.82);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 9px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.2px;
+}
+
+.room-card-photos-tag {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--cozy-dark);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.room-card-info {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  border-right: 1px solid var(--cozy-border);
+}
+
+.room-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--cozy-dark);
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.room-card-title:hover {
+  color: var(--cozy-primary);
+}
+
+.room-card-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.room-card-amenities {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.room-card-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.room-card-time {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+/* Room Card Slot Chips Grid */
+.room-slots-container {
+  width: 100%;
+  margin-top: 2px;
+}
+
+.room-slots-header {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #8c4217;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.room-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px 8px;
+}
+
+.room-slot-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.5px 8px;
+  background: #fdfaf7;
+  border: 1px solid #ebdcd0;
+  border-radius: 6px;
+  font-size: 11.5px;
+  color: #4a2e1b;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.room-slot-chip:hover {
+  background: #faefe5;
+  border-color: var(--cozy-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(185, 107, 53, 0.12);
+}
+
+.room-slot-chip-name {
+  font-weight: 700;
+  color: var(--cozy-dark);
+}
+
+.room-slot-chip-time {
+  color: #7a6050;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+@media (max-width: 540px) {
+  .room-slots-grid {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+.room-card-policy {
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.room-card-policy svg {
+  color: var(--success);
+  flex-shrink: 0;
+}
+
+.room-card-pricing {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.room-rating-box {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.rating-badge-num {
+  color: var(--cozy-dark);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.rating-badge-text {
+  text-align: right;
+  font-size: 11.5px;
+  color: var(--text-muted);
+  line-height: 1.25;
+}
+
+/* Skeleton loading state cho danh sách phòng */
+.room-list-skeleton-wrap .room-card-skeleton {
+  background: white;
+  border: 1px solid var(--cozy-border);
+  border-radius: var(--radius-md);
+  display: grid;
+  grid-template-columns: 32% 46% 22%;
+  overflow: hidden;
+  margin-bottom: 16px;
+  min-height: 195px;
+}
+
+/* Empty state */
+.room-empty-state {
+  text-align: center;
+  padding: 56px 20px;
+  background: white;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--cozy-border);
+  color: var(--text-muted);
+}
+.room-empty-state svg {
+  color: var(--text-light);
+  margin-bottom: 14px;
+}
+.room-empty-state h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cozy-dark);
+  margin-bottom: 6px;
+}
+.room-empty-state p {
+  font-size: 13.5px;
+  margin-bottom: 20px;
+}
+
+.room-price-val {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--cozy-dark);
+  line-height: 1;
+  text-align: right;
+}
+
+.room-price-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 3px;
+  text-align: right;
+}
+
+/* Tablet & Mobile Overrides for Traveloka layout */
+@media screen and (max-width: 1024px) {
+  .traveloka-layout {
+    grid-template-columns: 240px 1fr;
+    gap: 16px;
+  }
+  .room-card-traveloka {
+    grid-template-columns: 210px 1fr 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .traveloka-layout {
+    grid-template-columns: 1fr;
+  }
+  .traveloka-sidebar {
+    position: static;
+  }
+  .room-card-traveloka {
+    grid-template-columns: 1fr;
+  }
+  .room-card-info {
+    border-right: none;
+    border-bottom: 1px dashed var(--cozy-border);
+  }
+  .room-card-pricing {
+    align-items: stretch;
+    gap: 12px;
+  }
+  .room-rating-box {
+    justify-content: space-between;
+  }
+  .room-price-val,
+  .room-price-sub {
+    text-align: left;
+  }
+}
+
