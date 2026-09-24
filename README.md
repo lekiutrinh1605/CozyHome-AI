@@ -10,7 +10,7 @@ Hệ thống được xây dựng với mục đích minh họa kết quả phâ
 
 Đề tài được xây dựng trên tình huống nghiên cứu mô phỏng, không đại diện cho một doanh nghiệp CozyHome đang hoạt động thực tế.
 
----
+
 
 ## 2. Phạm vi hệ thống
 
